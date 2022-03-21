@@ -1,18 +1,17 @@
-# Angular Gif Search
-
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
 
-# About the app
+# Angular Gif Search
 
-This is an Angular based gif search application with a friendly user interface that fetches GIFS by keyword. Powered by Giphy API
+## About the app
 
-## Development server
+This is an Angular based gif search application with a friendly user interface that fetches gifs using the Giphy API.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How to Run the Application
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1.  Download the .zip or clone it from Github.
+2.  _Extract_ the downloaded content.
+3.  cd to your root folder `cd gif-search` and type in `npm install` to install dependencies.
+    Run `ng serve` or `npm start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically update if you change any of the source files.
 
 ## Build
 
@@ -21,11 +20,3 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

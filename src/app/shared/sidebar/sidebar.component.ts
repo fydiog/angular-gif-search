@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { GifService } from '../../gifs/services/gif.service';
 
 @Component({
@@ -13,13 +13,19 @@ import { GifService } from '../../gifs/services/gif.service';
   `
 ]
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
 
   get searchHistory(){
     return this.gifService.searchHistory;
   }
-  constructor(private gifService:GifService) { }
-  ngOnInit(): void {
+
+
+  constructor(private gifService : GifService) { }
+
+  
+  search( keyword:string ){
+    console.log('keyword')
+    this.gifService.searchGifs(keyword)
   }
 
 }

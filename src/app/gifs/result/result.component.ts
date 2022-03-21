@@ -10,7 +10,7 @@ export class ResultComponent {
 
 
   get results(){
-    return this.gifService.results
+    return this.gifService.results;
   }
 
   constructor(private gifService:GifService) {

@@ -24,6 +24,7 @@ export class SearchComponent{
     }
 
     this.gifsService.searchGifs(val)
+    this.searchInput.nativeElement.value = '';
     
   } 
 

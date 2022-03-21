@@ -4,9 +4,11 @@
   <div class="list-group list-reset">
     <a
       *ngFor="let keyword of searchHistory"
-      class="list-group-item list-group-item-action"
+      (click)="search(keyword)"
       href="#"
-      >{{ keyword | titlecase }}</a
+      class="list-group-item list-group-item-action"
     >
+      {{ keyword | titlecase }}
+    </a>
   </div>
 </div>

@@ -20,12 +20,19 @@ export class SidebarComponent {
   }
 
 
-  constructor(private gifService : GifService) { }
+  constructor(private gifService : GifService) { 
+
+    console.log(this.searchHistory)
+  }
 
   
   search( keyword:string ){
     console.log('keyword')
     this.gifService.searchGifs(keyword)
+  }
+
+  clear(){
+    this.gifService.clearHistory();
   }
 
 }

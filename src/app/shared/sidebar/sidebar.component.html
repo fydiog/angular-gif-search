@@ -11,4 +11,15 @@
       {{ keyword | titlecase }}
     </a>
   </div>
+
+  <button
+    class="btn btn-dark"
+    *ngIf="searchHistory.length > 0; else noHistoryFound"
+    (click)="clear()"
+  >
+    Clear history
+  </button>
+  <ng-template #noHistoryFound>
+    <p class="text-light">Your recent searches <br />will be displayed here</p>
+  </ng-template>
 </div>

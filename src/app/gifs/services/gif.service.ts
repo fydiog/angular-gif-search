@@ -45,8 +45,12 @@ export class GifService {
         this.results = res.data
         localStorage.setItem('results', JSON.stringify(this.results))
       })
+  }
 
+  clearHistory(){
+    this._searchHistory = [];
+    localStorage.removeItem('searchHistory');
+    localStorage.removeItem('results')
 
-    
   }
 }

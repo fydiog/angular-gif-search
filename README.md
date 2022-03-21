@@ -2,6 +2,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Angular Gif Search
 
+![angular-gif-search](https://i.imgur.com/rA0M0Iq.png)
+
 ## About the app
 
 This is an Angular based gif search application with a friendly user interface that fetches gifs using the Giphy API.
